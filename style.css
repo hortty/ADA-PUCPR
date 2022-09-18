@@ -1,0 +1,165 @@
+    *{
+        padding:0;
+        margin:0;
+        box-sizing:border-box;
+        font-family:"Saira"
+    }
+
+    a{
+        text-decoration:none
+    }
+
+    p,h1,h2,h3,h4,h5,h6{
+        margin:0
+    }
+
+    html{
+       scroll-behavior:smooth;
+       font-size:62.5%}
+
+   ::-webkit-scrollbar{width:8px}
+   ::-webkit-scrollbar-track{background-color:#ffffff}
+   ::-webkit-scrollbar-thumb{background-color:#000000;
+       border-radius:8px
+    }
+
+    header{
+       background:rgba(71, 71, 71, 0.7);
+       backdrop-filter:blur(24px);
+       -webkit-backdrop-filter:blur(24px);
+       border-bottom:1px solid rgba(236, 227, 227, 0.8);
+       z-index:999;
+       width:100%;
+       position:fixed;
+       top:0;
+       left:0
+    }
+
+    .grid{
+        max-width:1140px;
+        margin:0 auto
+    }
+
+   header .grid nav{
+       display:flex;
+       justify-content:space-between;
+       align-items:center;
+       flex-wrap:wrap;
+       height:8vh;
+       padding:0px 8px}
+
+   header .grid nav .nav-list li a{color:#fcf7f7;
+       position:relative;
+       font-size:1.8rem;
+       font-family:"Saira"}
+
+   header .grid nav ::after{content:"";
+       position:absolute;
+       width:100%;
+       transform:scaleX(0);
+       height:1px;
+       bottom:-7px;
+       left:0;
+       background:linear-gradient(270deg, #ffffff 0%, #6d6e70 100%);
+       transform-origin:bottom right;
+       transition:transform 0.5s cubic-bezier(0.86, 0, 0.07, 1)}
+
+    ul {
+        display: flex;
+        justify-content:space-between}
+       
+    li {
+        list-style: none;
+        flex-grow: 3;
+        padding-right: 4px;
+        padding-left: 10px}
+    
+   header .grid nav .nav-list li a:hover::after{transform:scaleX(1);
+       transform-origin:bottom left}
+
+   #about{padding:96px 48px;
+       background-color:#2c2c2c}
+
+   #about .grid #about{display:flex;
+       justify-content:space-between;
+       align-items:center;
+       flex-wrap:wrap}
+
+   #about .grid #about-text h2{padding-bottom:24px;
+       color:#fafafa;
+       font-size:4rem;
+       font-weight:500}
+   #about .grid #about-text h2 span{color:#fafafa;
+       font-size:4.8rem}
+   #about .grid #about-text p{line-height:3.2rem;
+       color:#fafafa;
+       font-family:"Saira";
+       font-size:2rem;
+       font-line-height:160%}
+
+   #s-projects{padding:96px 48px;
+       text-align:center;
+       background-color:#252525}
+
+   #s-projects .grid h2{padding-bottom:24px;
+       color:#fafafa;
+       font-size:4rem;
+       font-weight:500}
+
+   #s-projects .grid #projects{margin:24px 0px;
+       display:flex;
+       justify-content:space-between;
+       align-items:center;
+       flex-wrap:wrap;
+       text-align:left}
+   #s-projects .grid #projects .naped{border:1px solid #d6d6d6}
+   #s-projects .grid #projects .naped:hover{border:1px solid #d6d6d6}
+   #s-projects .grid #projects>article{background-color:rgba(71, 71, 71, 0.7);
+       height:auto;
+       padding:32px;
+       margin:8px;
+       flex-basis:calc(33% - 20px);
+       flex-grow:1;
+       border:1px solid #06090f;
+       transition:1s all ease;
+       min-height:275px}
+   #s-projects .grid #projects>article:hover{border:1px solid #fafafa}
+
+   #s-projects .grid #projects>article h3{color:#fafafa;
+       font-size:2.4rem;
+       font-weight:500}
+   #s-projects .grid #projects>article p{line-height:24px;
+       margin:24px 0px;
+       color:#b0b0b0;
+       line-height:3.2rem;
+       font-family:"Saira";
+       font-size:1.8rem}
+   #s-projects .grid #naped{color:#fafafa}
+   #s-projects .grid #naped::after{background:linear-gradient(270deg, #ffffff 0%, #ffffff 100%)}
+   #s-projects .grid a{color:#fafafa;
+       position:relative;
+       font-size:1.8rem;
+       font-weight:400}
+   #s-projects .grid a::after{content:"";
+       position:absolute;
+       width:100%;
+       transform:scaleX(0);
+       height:1px;
+       bottom:-7px;
+       left:0;
+       background:linear-gradient(270deg, #ffffff 0%, #6d6e70 100%);
+       transform-origin:bottom right;
+       transition:transform 0.5s cubic-bezier(0.86, 0, 0.07, 1)}
+   #s-projects .grid a:hover::after{transform:scaleX(1);
+       transform-origin:bottom left}
+   #s-projects .grid a::after{content:"";
+       position:absolute;
+       width:100%;
+       transform:scaleX(0);
+       height:1px;
+       bottom:-7px;
+       left:0;
+       transform-origin:bottom right;
+       transition:transform 0.5s cubic-bezier(0.86, 0, 0.07, 1)}
+   #s-projects .grid a:hover::after{transform:scaleX(1);
+       transform-origin:bottom left}
